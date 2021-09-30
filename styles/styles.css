@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap");
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  font-size: 16px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.body .main {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.body .main .nav {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background-color: HSL(0, 0%, 100%);
+}
+
+.body .main .nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .main .nav__list__item {
+  margin: 0 30px;
+  color: pink;
+}
+
+.body .main .nav__list__item__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: HSL(233, 8.2%, 61.6%);
+  padding-bottom: 22px;
+}
+
+.body .main .nav__list__item__link:hover {
+  border-bottom: inset 8px;
+  border-color: #2dd261;
+}
+
+.body .main .nav__item__request-button {
+  padding: 8px 33px;
+  border-radius: 22px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ed262+0,25b7d7+100 */
+  background: #2ed262;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2dd261), to(#24b5d6));
+  background: linear-gradient(to right, #2dd261 0%, #24b5d6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ed262', endColorstr='#25b7d7',GradientType=1 );
+  /* IE6-9 */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  line-height: 2;
+  margin-right: 70px;
+}
+
+.body .main .nav__item__request-button:hover {
+  opacity: 0.7;
+}
+
+.body .main .section {
+  background-color: HSL(0, 0%, 98%);
+  margin-top: 0;
+  padding-top: 150px;
+  height: 538px;
+}
+
+.body .main .section__article {
+  background: none;
+  margin-left: 95px;
+  width: 450px;
+  margin-top: 50px;
+}
+
+.body .main .section__article__heading {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 56px;
+  font-weight: 100;
+  color: HSL(233, 26.2%, 23.9%);
+}
+
+.body .main .section__article__description {
+  color: HSL(233, 8.2%, 61.6%);
+  font-size: 18px;
+  margin-top: -30px;
+  line-height: 1.6;
+}
+
+.body .main .section__request-button {
+  margin-top: 15px;
+  padding: 8px 33px;
+  border-radius: 22px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ed262+0,25b7d7+100 */
+  background: #2ed262;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2dd261), to(#24b5d6));
+  background: linear-gradient(to right, #2dd261 0%, #24b5d6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ed262', endColorstr='#25b7d7',GradientType=1 );
+  /* IE6-9 */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  line-height: 2;
+  margin-right: 70px;
+}
+
+.body .main .section__request-button:hover {
+  opacity: 0.7;
+}
+
+.body .main .section .ads {
+  width: 720px;
+  height: 800px;
+  position: absolute;
+  top: 80px;
+  right: 231px;
+  overflow: hidden;
+}
+
+.body .main .section .ads__background {
+  position: relative;
+  z-index: 1;
+  top: -250px;
+  right: 70px;
+}
+
+.body .main .section .ads__phones {
+  position: absolute;
+  z-index: 10;
+  top: -105px;
+  right: -155px;
+}
+
+.body .main .info {
+  height: 676px;
+  background-color: HSL(220, 15.8%, 96.3%);
+  font-family: 'Public Sans', sans-serif;
+  margin-top: -40px;
+}
+
+.body .main .info__heading {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: HSL(233, 26.2%, 23.9%);
+  padding-top: 70px;
+  padding-left: 100px;
+}
+
+.body .main .info__description {
+  font-size: 18px;
+  padding-left: 100px;
+  line-height: 1.556;
+  color: HSL(233, 8.2%, 61.6%);
+  margin-bottom: 70px;
+}
+
+.body .main .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.body .main .articles__info {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.body .main .articles__info__icon {
+  padding-bottom: 10px;
+}
+
+.body .main .articles__info__heading {
+  color: HSL(233, 26.2%, 23.9%);
+  font-size: 24px;
+}
+
+.body .main .articles__info__description {
+  color: HSL(233, 8.2%, 61.6%);
+  line-height: 1.625;
+}
+
+.body .main .latest__articles {
+  background-color: HSL(0, 0%, 98%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.body .main .latest__articles__info {
+  font-size: 40px;
+  color: HSL(233, 26.2%, 23.9%);
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 100px;
+  margin-bottom: 40px;
+}
+
+.body .main .latest__articles__news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.body .main .latest__articles__news__item {
+  background-color: HSL(0, 0%, 100%);
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.body .main .latest__articles__news__item__photo {
+  width: 280px;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.body .main .latest__articles__news__item__author {
+  font-size: 10px;
+  color: HSL(233, 8.2%, 61.6%);
+  line-height: 1.8;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.body .main .latest__articles__news__item__heading {
+  font-size: 16px;
+  line-height: 1.25;
+  color: HSL(233, 26.2%, 23.9%);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.body .main .latest__articles__news__item__heading:hover {
+  color: HSL(158, 61.3%, 48.6%);
+}
+
+.body .main .latest__articles__news__item__description {
+  font-size: 13px;
+  line-height: 1.385;
+  color: HSL(233, 8.2%, 61.6%);
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.body .main .footer {
+  height: 250px;
+  background-color: HSL(233, 26.2%, 23.9%);
+}
+
+.body .main .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 70px;
+}
+
+.body .main .footer__container__item {
+  background-color: none;
+}
+
+.body .main .footer__container__item__logo {
+  fill: aliceblue;
+  margin-bottom: 70px;
+}
+
+.body .main .footer__container__item__social__media {
+  background-color: none;
+}
+
+.body .main .footer__container__item__social__media__link {
+  text-decoration: none;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.body .main .footer__container__item__social__media__link:hover {
+  border-bottom: 3px solid #2ed262;
+}
+
+.body .main .footer__container__item__menu {
+  list-style: none;
+}
+
+.body .main .footer__container__item__menu__list {
+  margin-bottom: 20px;
+}
+
+.body .main .footer__container__item__menu__list:last-of-type {
+  margin-bottom: 0;
+}
+
+.body .main .footer__container__item__menu__list__link {
+  text-decoration: none;
+  color: HSL(0, 0%, 100%);
+  font-size: 15px;
+}
+
+.body .main .footer__container__item__menu__list__link:hover {
+  color: HSL(158, 61.3%, 48.6%);
+}
+
+.body .main .footer__container__item__request-button {
+  padding: 8px 33px;
+  border-radius: 22px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ed262+0,25b7d7+100 */
+  background: #2ed262;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2dd261), to(#24b5d6));
+  background: linear-gradient(to right, #2dd261 0%, #24b5d6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ed262', endColorstr='#25b7d7',GradientType=1 );
+  /* IE6-9 */
+  float: right;
+  margin-bottom: 60px;
+  color: HSL(0, 0%, 100%);
+  font-size: 14;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.body .main .footer__container__item__request-button:hover {
+  opacity: 0.7;
+}
+
+.body .main .footer__container__item__copyright {
+  clear: right;
+  color: HSL(0, 0%, 100%);
+}
+
+/*
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        
+        li {
+          margin: 0 30px;
+          
+          a {
+            font-size: 14px;
+            text-decoration: none;
+            color: HSL(233, 8.2%, 61.6%);
+          }
+        }
+      }
+      .request-button button{
+        padding: 8px 33px;
+        @include borderRadius(22px);
+        @include gradientBtn(hsl(139,65%,50%) 0%, hsl(191,71%,49%) 100%);
+
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(0, 0, 100%);
+        line-height: 2;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}*/
+/*
+ .ads {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -292px;
+        right: -1340px;
+        background-color: sandybrown;
+
+*/
+/*Small List Items
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easybank</title>
+  <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body">
+  <main class="main">
+    <nav class="nav">
+      <div class="nav__item__logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="nav__item-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li class="nav__item">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Carrers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__item__request">
+        <button class="nav__item__request-button">
+          Request Invite
+        </button>
+      </div>
+    </nav>
+  </main>
+</body>
+
+</html>
+
+*/
+/*# sourceMappingURL=styles.css.map */

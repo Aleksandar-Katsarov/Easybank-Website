@@ -1,0 +1,461 @@
+@mixin gradientBtn($from, $to, $repeat: no-repeat){
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ed262+0,25b7d7+100 */
+    background: #2ed262; /* Old browsers */
+    background: -moz-linear-gradient(left,  hsl(139,65%,50%) 0%, hsl(191,71%,49%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  hsl(139,65%,50%) 0%,hsl(191,71%,49%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  hsl(139,65%,50%) 0%,hsl(191,71%,49%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ed262', endColorstr='#25b7d7',GradientType=1 ); /* IE6-9 */
+
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+  border: none;
+}
+
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap');
+
+
+  font-size: 16px;
+  font-family: 'Public Sans', sans-serif;
+
+  .main {
+    width: 1440px;
+    margin: 0 auto;
+
+    .nav {
+      font-size: 18px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: HSL(0, 0%, 100%);
+    
+      &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        //background-color: hsl(139,65%,50%);
+
+        &__item {
+          margin: 0 30px;
+          color: pink;
+
+          &__link {
+            font-size: 14px;
+            text-decoration: none;
+            color: HSL(233, 8.2%, 61.6%);
+            padding-bottom: 22px;
+            
+            &:hover{
+              border-bottom: inset 8px;
+              border-color: hsl(139,65%,50%); // I will see how to change the border color property to gradient 
+              
+            }
+          }
+        }
+      }
+      &__item__request-button {
+        padding: 8px 33px;
+        @include borderRadius(22px);
+        @include gradientBtn(hsl(139,65%,50%) 0%, hsl(191,71%,49%) 100%);
+
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(0, 0, 100%);
+        line-height: 2;
+        margin-right: 70px;
+        
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .section {
+      background-color: HSL(0, 0%, 98%);
+      margin-top: 0;
+      padding-top: 150px;
+      height: 538px;
+      
+      &__article {
+        background: none;
+        margin-left: 95px;
+        width: 450px;
+        margin-top: 50px;
+      }
+
+      &__article__heading {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 56px;
+        font-weight: 100;
+        color: HSL(233, 26.2%, 23.9%);
+      }
+      
+      &__article__description {
+        color: HSL(233, 8.2%, 61.6%);
+        font-size: 18px;
+        margin-top: -30px;
+        line-height: 1.6;
+      }
+
+      &__request-button{
+        margin-top: 15px;
+
+        padding: 8px 33px;
+        @include borderRadius(22px);
+        @include gradientBtn(hsl(139,65%,50%) 0%, hsl(191,71%,49%) 100%);
+
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(0, 0, 100%);
+        line-height: 2;
+        margin-right: 70px;
+       
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .ads {
+        width: 720px;
+        height: 800px;
+        position: absolute;
+        top: 80px;
+        right: 231px;
+        //background-color: sandybrown;
+        overflow: hidden;
+
+        &__background {
+          position: relative;
+          z-index: 1;
+          top: -250px;
+          right: 70px;
+        }    
+
+        &__phones {
+          position: absolute;
+          z-index: 10;
+          top: -105px;
+          right: -155px;
+        }
+      }
+    }
+
+    .info {
+      height: 676px;
+      background-color: HSL(220, 15.8%, 96.3%);
+      font-family: 'Public Sans', sans-serif;
+      margin-top: -40px;
+      
+
+      &__heading {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 300;
+        
+        color: HSL(233, 26.2%, 23.9%);
+
+        padding-top: 70px;
+        padding-left: 100px;
+      }
+
+      &__description {
+        font-size: 18px;
+        padding-left: 100px;
+        line-height: 1.556;
+        color: HSL(233, 8.2%, 61.6%);
+        margin-bottom: 70px;
+      }
+    }
+
+    .articles {
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 80px;
+      padding-right: 80px;
+
+      &__info {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        &__icon {
+          padding-bottom: 10px;
+        }
+
+        &__heading {
+          color: HSL(233, 26.2%, 23.9%);
+          font-size: 24px;
+        }
+
+        &__description {
+          color: HSL(233, 8.2%, 61.6%);
+          line-height: 1.625;
+        }
+      }
+    }
+
+    .latest__articles {
+      background-color: HSL(0, 0%, 98%);
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      &__info {
+        font-size: 40px;
+        color: HSL(233, 26.2%, 23.9%);
+        line-height: 1.6;
+        margin: 0;
+        padding-left: 100px;
+        margin-bottom: 40px;
+      }
+
+      &__news {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        &__item {
+          background-color: HSL(0, 0%, 100%);
+          margin-right: 30px;
+          border-radius: 5px;
+
+          &__photo {
+            width: 280px;
+            height: 200px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+
+          &__author {
+            font-size: 10px;
+            color: HSL(233, 8.2%, 61.6%);
+            line-height: 1.8;
+            margin-left: 24px;
+            margin-right: 24px;
+          }
+
+          &__heading {
+            font-size: 16px;
+            line-height: 1.25;
+            color: HSL(233, 26.2%, 23.9%);
+            margin-left: 24px;
+            margin-right: 24px;
+            &:hover{
+              color: HSL(158, 61.3%, 48.6%);
+            }
+          }
+
+          &__description {
+            font-size: 13px;
+            line-height: 1.385;
+            color: HSL(233, 8.2%, 61.6%);
+            margin-left: 24px;
+            margin-right: 24px;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      height: 250px;
+      background-color: HSL(233, 26.2%, 23.9%);
+
+      &__container {
+        display: flex;
+        justify-content: space-evenly;
+        //padding-left: 100px;
+        //padding-right: 100px;
+        padding-top: 70px;
+
+        &__item {
+          background-color: none;
+
+          &__logo {
+            fill: aliceblue;
+            margin-bottom: 70px;
+          }
+
+          &__social__media {
+            background-color: none;
+           
+            &__link{
+              text-decoration: none;
+              margin-right: 5px;
+              text-align: center;
+
+              &:hover {
+                border-bottom: 3px solid #2ed262; 
+              }
+            }
+          }
+
+          &__menu {
+            list-style: none;
+            
+            &__list {
+              margin-bottom: 20px;
+              
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+
+              &__link {
+                text-decoration: none;
+                color: HSL(0, 0%, 100%);
+                font-size: 15px;
+                
+                &:hover {
+                  color: HSL(158, 61.3%, 48.6%);
+                }
+              }
+            }
+          }
+          
+          &__request-button {
+            padding: 8px 33px;
+            @include borderRadius(22px);
+            @include gradientBtn(hsl(139,65%,50%) 0%, hsl(191,71%,49%) 100%);
+            float: right;
+            margin-bottom: 60px;
+            color: HSL(0, 0%, 100%);
+            font-size: 14;
+            font-weight: bold;
+            line-height: 2;
+            
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+
+          &__copyright {
+            clear: right;
+            color: HSL(0, 0%, 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        
+        li {
+          margin: 0 30px;
+          
+          a {
+            font-size: 14px;
+            text-decoration: none;
+            color: HSL(233, 8.2%, 61.6%);
+          }
+        }
+      }
+      .request-button button{
+        padding: 8px 33px;
+        @include borderRadius(22px);
+        @include gradientBtn(hsl(139,65%,50%) 0%, hsl(191,71%,49%) 100%);
+
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(0, 0, 100%);
+        line-height: 2;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}*/
+
+
+/*
+ .ads {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -292px;
+        right: -1340px;
+        background-color: sandybrown;
+
+*/
+
+
+/*Small List Items
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easybank</title>
+  <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body">
+  <main class="main">
+    <nav class="nav">
+      <div class="nav__item__logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="nav__item-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li class="nav__item">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Carrers</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__item__request">
+        <button class="nav__item__request-button">
+          Request Invite
+        </button>
+      </div>
+    </nav>
+  </main>
+</body>
+
+</html>
+
+*/
